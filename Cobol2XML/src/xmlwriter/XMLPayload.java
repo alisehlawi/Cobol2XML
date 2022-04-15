@@ -118,6 +118,18 @@ public class XMLPayload {
 		}
 		
 		/*
+		* add commentLine element
+		*/
+		String commentLine = c.getCommentLine();
+		if (commentLine != null) {
+		this.addCommentLineElement( commentLine );
+		//System.out.println("Got Section");
+		// Add contents of procedure division
+		} else {
+		//System.out.println("Comment Line null");
+		}
+		
+		/*
 		 *  add DateWritten element
 		 */	
 		// DayDateWritten
